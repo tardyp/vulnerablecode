@@ -79,3 +79,11 @@ def create_etag(data_src, url, etag_key):
 
 
 is_cve = re.compile(r"CVE-\d+-\d+", re.IGNORECASE).match
+
+
+def contains_alpha(string):
+    """
+    Return True if the input 'string' contains any alphabet
+    """
+
+    return any([c.isalpha() for c in string])
